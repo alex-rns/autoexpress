@@ -2,13 +2,12 @@
 
 //welcome-page
 .welcome-page
-  background: linear-gradient(to bottom, rgba(30, 94, 155, .85) 0%, rgba(255, 255, 255, .1) 100%),url("/images/dest/welcome-image.png") no-repeat bottom center
+  background: linear-gradient(to bottom, rgba(30, 94, 155, .7) 0%, rgba(255, 255, 255, .1) 100%),url("/images/dest/welcome-image.png") no-repeat bottom center
   background-size: cover
   height: 100vh
   position: relative
 
 header
-
   .navbar-brand
     width: 10rem
     img
@@ -27,6 +26,9 @@ header
 .jumbotron-fluid
   h1
     color: #fff
+.jumbotron-button-block
+  a
+    min-width: 200px
 
 .about
   height: 10000px
@@ -43,7 +45,7 @@ header
 .header-h1 h1
   position: relative
   padding-bottom: 1rem
-  font-size: 2.5rem
+  font-size: 2.8rem
   text-transform: uppercase
 
   &::before
@@ -52,7 +54,7 @@ header
     border-bottom: 2px solid #ED2B2A
     bottom: .5rem
     left: 50%
-    width: 30%
+    width: 50%
     transform: translateX(-50%)
 
   &::after
@@ -61,7 +63,7 @@ header
     border-bottom: 2px solid #ED2B2A
     bottom: 0
     left: 50%
-    width: 15%
+    width: 25%
     transform: translateX(-50%)
 .about
   background: yellow

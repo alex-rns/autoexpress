@@ -10,8 +10,7 @@
 header
 
   .navbar-brand
-    padding: 5px
-    width: 13rem
+    width: 10rem
     img
       width: 100%
 
@@ -23,14 +22,15 @@ header
   min-height: 100vh
   display: flex
   align-items: center
+  justify-content: center
 
 .jumbotron-fluid
-  margin-top: 150px
   h1
     color: #fff
 
 .about
   height: 10000px
+
 .navbar
   background:  linear-gradient( rgba(30, 94, 155, 0.5), rgba(30, 94, 155, 0.5) ), url("/images/dest/top-bg.png") repeat-x
   background-size: cover
@@ -38,6 +38,8 @@ header
   left: 0
   right: 0
   z-index: 5
+  text-transform: uppercase
+
 .header-h1 h1
   position: relative
   padding-bottom: 1rem
@@ -61,18 +63,3 @@ header
     left: 50%
     width: 15%
     transform: translateX(-50%)
-
-.header-h1-left h1
-  text-align: left
-
-  &::before, &::after
-    left: 0
-    transform: translateX(0)
-
-.header-h1-right h1
-  text-align: right
-
-  &::before, &::after
-    left: unset
-    right: 0
-    transform: translateX(0)

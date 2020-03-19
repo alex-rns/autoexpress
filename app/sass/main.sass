@@ -42,11 +42,11 @@ header
   z-index: 5
   text-transform: uppercase
 
-.header-h1 h1
+.header-h1 h1, .h2
   position: relative
   padding-bottom: 1rem
   font-size: 2.8rem
-  text-transform: uppercase
+  font-weight: 700
 
   &::before
     content: ""
@@ -65,8 +65,85 @@ header
     left: 50%
     width: 25%
     transform: translateX(-50%)
+
+//About section
+.h2
+  text-transform: uppercase
+  font-size: 2rem
+  text-shadow: 0 0 5px #1E5E9B
+
 .about
-  background: yellow
+  background: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, rgba(30, 94, 155, .7) 100%),url("/images/dest/bus-about.jpg") no-repeat center center
+  background-size: cover
+  height: 100%
+  p
+    font-family: Roboto, sans-serif
+  .btn-about
+    min-width: 250px
+.about-items
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  .about-item
+    margin: 15px 18px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 150px
+    height: 150px
+    background-color: #fff
+    border: 3px solid #87CEDE
+    border-radius: 100%
+
+//services section
+
+.services
+  background: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, rgba(30, 94, 155, .7) 100%)
+
+
 .contacts
   background: green
   height: 600px
+
+.gallery
+  .works
+    &-item
+      //transition: $transition
+      border: 1px solid $white
+      position: relative
+      overflow: hidden
+
+      img
+        //transition: $transition
+        min-height: 100%
+        width: 100%
+
+      &-overlay
+        background-color: rgba(232, 69, 69, 0.9)
+        position: absolute
+        opacity: 0
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+
+      &-info
+        text-align: center
+        display: none
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+      &:hover
+        .works-item
+          &-info
+            display: block
+
+          &-overlay
+            opacity: 1
+        img
+          transform: scale(1.2)

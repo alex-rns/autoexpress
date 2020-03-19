@@ -3,8 +3,8 @@
 @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
 @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
 @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
-@import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
-@import 'node_modules/bootstrap/scss/bootstrap.scss' // Optional Bootstrap Utilites
+@import 'node_modules/bootstrap/scss/utilities/_sizing.scss'
+@import 'node_modules/bootstrap/scss/bootstrap.scss'
 
 
 // USER VARIABLES SECTION
@@ -13,7 +13,7 @@ $accent: orange // Accent Color
 $fontsize: 16px // Body Font Size
 $textcolor: #333 // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
-$robotoslab: Robotoslab, serif // RobotoSlab Font Family
+$robotoslab: 'Roboto Slab', serif // RobotoSlab Font Family
 
 // Bootstrap compatible gutter variable => $gutter
 
@@ -36,7 +36,6 @@ $gutter: $grid-gutter-width
 @include font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2')
 @include font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2')
 @include font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
-@include font('Robotoslab', normal, 700, '../fonts/robotoslab-bold-webfont.woff2')
 
 // GENERAL DOCUMENT STYLES
 

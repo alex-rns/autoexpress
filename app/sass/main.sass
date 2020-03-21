@@ -102,6 +102,16 @@ header
 
 .services
   background: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, rgba(30, 94, 155, .7) 100%)
+.services-item
+  img
+    opacity: 0.3
+.services-info
+  position: absolute
+  text-align: center
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
 
 
 .contacts
@@ -109,15 +119,17 @@ header
   height: 600px
 
 .gallery
-  .works
+  ul
+    padding: 0
+  .gallery
     &-item
-      //transition: $transition
-      border: 1px solid $white
+      transition: all 0.5s ease
+      border: 0 solid #fff
       position: relative
       overflow: hidden
 
       img
-        //transition: $transition
+        transition: all 0.5s ease
         min-height: 100%
         width: 100%
 
@@ -139,7 +151,7 @@ header
         transform: translate(-50%, -50%)
 
       &:hover
-        .works-item
+        .gallery-item
           &-info
             display: block
 

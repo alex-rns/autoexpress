@@ -22,7 +22,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  $(".fancybox").fancybox({
-  });
-
 });

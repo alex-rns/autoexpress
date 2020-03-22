@@ -7,7 +7,7 @@
   height: 100vh
   position: relative
 
-header
+header, footer
   .navbar-brand
     width: 10rem
     img
@@ -158,12 +158,45 @@ header
 
 
 .contacts
-  background: #87CEDE
+  background: #fff
   &-phone
     background: #fff
   ul
     margin: 0
     list-style-type: none
-    li:last-child
-      span
-        margin-left: 55px
+  &-map
+    iframe
+      min-height: 450px
+  &-list
+    padding: 0
+    font-size: 20px
+    letter-spacing: 2px
+  &-button
+    a
+      min-width: 280px
+  .map-mark
+    width: 40px
+
+footer
+  background:  linear-gradient( rgba(30, 94, 155, 0.5), rgba(30, 94, 155, 0.5) ), url("/images/dest/top-bg.png") repeat-x
+  background-size: cover
+  span
+    font-size: 0.7rem
+  #toTop
+    height: 40px
+    border-radius: 100%
+    span
+      line-height: 1.2
+      font-size: 30px
+
+@media (min-width: 768px)
+  .contacts-list
+    padding-left: 40px
+
+@media (min-width: 992px)
+  .contacts-list
+    padding-left: 60px
+
+@media (min-width: 1200px)
+  .contacts-list
+    padding-left: 100px

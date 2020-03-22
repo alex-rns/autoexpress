@@ -113,14 +113,10 @@ header
   transform: translate(-50%, -50%)
 
 
-
-.contacts
-  background: green
-  height: 600px
-
 .gallery
   ul
     padding: 0
+    margin-bottom: 0
   .gallery
     &-item
       transition: all 0.5s ease
@@ -159,3 +155,15 @@ header
             opacity: 1
         img
           transform: scale(1.2)
+
+
+.contacts
+  background: #87CEDE
+  &-phone
+    background: #fff
+  ul
+    margin: 0
+    list-style-type: none
+    li:last-child
+      span
+        margin-left: 55px

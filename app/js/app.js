@@ -28,4 +28,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
   });
 
+  lightbox.option({
+    // 'albumLabel': 'Автобус %1 из %2',
+    'showImageNumberLabel': false,
+    'resizeDuration': 500,
+    'wrapAround': true,
+    'alwaysShowNavOnTouchDevices': true,
+    'disableScrolling': true
+  })
+
 });

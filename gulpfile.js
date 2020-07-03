@@ -73,8 +73,8 @@ function deploy() {
 	return src('app/')
 	.pipe(rsync({
 		root: 'app/',
-		hostname: 'username@yousite.com',
-		destination: 'yousite/public_html/',
+		hostname: 'pffnew@autoexpress.zzz.com.ua',
+		destination: '/autoexpress.zzz.com.ua',
 		// include: ['*.htaccess'], // Included files
 		exclude: ['**/Thumbs.db', '**/*.DS_Store'], // Excluded files
 		recursive: true,

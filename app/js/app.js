@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
   $("a").on('click', function(event) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
-      var header = $('.header').height() + 50;
+      var header = $('.header').height() + 40;
 
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {

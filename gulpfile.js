@@ -42,9 +42,11 @@ function styles() {
 
 function scripts() {
 	return src([
-		'node_modules/jquery/dist/jquery.min.js', // npm vendor example (npm i --save-dev jquery)
+		'app/feedback/vendors/jquery/jquery-3.3.1.min.js', // npm vendor example (npm i --save-dev jquery)
 		'node_modules/bootstrap/dist/js/bootstrap.js',
 		'node_modules/lightbox2/dist/js/lightbox.min.js',
+		'app/feedback/js/process-forms.js',
+		'app/feedback/js/main.js',
 
 
 		'app/js/app.js' // app.js. Always at the end

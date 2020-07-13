@@ -37,4 +37,9 @@ document.addEventListener("DOMContentLoaded", function() {
     'disableScrolling': true
   })
 
+  // mask for "Phone" input
+  $('[name="phone"]').mask("+38(000) 000 00 00", {
+    placeholder: "+38(___) ___ __ __"
+  });
+
 });

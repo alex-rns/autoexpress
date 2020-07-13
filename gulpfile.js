@@ -46,6 +46,7 @@ function scripts() {
 		'node_modules/bootstrap/dist/js/bootstrap.js',
 		'node_modules/lightbox2/dist/js/lightbox.min.js',
 		'app/feedback/js/process-forms.js',
+		'app/feedback/vendors/mask/jquery.mask.min.js',
 		'app/feedback/js/main.js',
 
 

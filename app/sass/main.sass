@@ -11,7 +11,7 @@ header, footer
   .navbar-brand
     width: 10rem
     img
-      width: 100%
+      width: 70%
 
 .navbar-toggler:focus, .navbar-toggler:hover
     outline: none !important
@@ -183,6 +183,24 @@ header, footer
       min-width: 280px
   .map-mark
     width: 40px
+
+.modal
+  padding-right: 0 !important
+  &-content
+    border-radius: 0.8rem
+  &-header
+    background:  linear-gradient( rgba(30, 94, 155, 0.4), rgba(30, 94, 155, 0.4) ), url("../images/dest/top-bg.png") repeat-x
+    background-size: cover
+    border-top-left-radius: calc(0.8rem - 1px)
+    border-top-right-radius: calc(0.8rem - 1px)
+    h5
+      margin-left: 15px
+    button:focus
+      outline: none
+  .form-group
+    input:focus:required, input:required:valid
+      border-color: #ced4da
+
 
 footer
   background:  linear-gradient( rgba(30, 94, 155, 0.5), rgba(30, 94, 155, 0.5) ), url("../images/dest/top-bg.png") repeat-x

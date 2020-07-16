@@ -20,10 +20,10 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 const
 MAX_FILE_SIZE = 524288, // максимальный размер файла 512Кбайт (512*1024=524288)
 MAIL_FROM = 'admin@autoluxplus.zzz.com.ua', // от какого email будет отправляться письмо
-MAIL_FROM_NAME = 'Имя_сайта', // от какого имени будет отправляться письмо
-MAIL_SUBJECT = 'Сообщение с формы обратной связи', // тема письма
+MAIL_FROM_NAME = 'autoluxplus.zzz.com.ua', // от какого имени будет отправляться письмо
+MAIL_SUBJECT = 'Повідомлення з форми замовлення дзвінка', // тема письма
 MAIL_ADDRESS = 'admin@autoluxplus.zzz.com.ua', // кому необходимо отправить письмо
-MAIL_SUBJECT_CLIENT = 'Ваше сообщение доставлено', // настройки mail для информирования пользователя о доставке сообщения
+MAIL_SUBJECT_CLIENT = 'Ваше повідомлення доставлено', // настройки mail для информирования пользователя о доставке сообщения
 IS_SENDING_MAIL_VIA_SMTP = false, // выполнять отправку писем через SMTP
 // Если IS_SENDING_MAIL_VIA_SMTP установлен равным true
 MAIL_SMTP_HOST = 'ssl://smtp.yandex.ru', // SMTP-хост
@@ -57,14 +57,14 @@ if (isset($_POST['name'])) {
   $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING); // защита от XSS
   $nameLength = mb_strlen($name, 'UTF-8');
   if ($nameLength < 2) {
-    $data['name'] = 'Текст должен быть не короче 2 симв. Длина текста сейчас: ' . $nameLength . ' симв.';
+    $data['name'] = 'Текст повинен бути не коротшим за 2 символи. Довжина тексту зараз: ' . $nameLength . ' симв.';
     $data['result'] = 'error';
   } else if ($nameLength > 30) {
-    $data['name'] = 'Длина текста не должна превышать 30 симв. (сейчас ' . $nameLength . ' симв.).';
+    $data['name'] = 'Довжина тексту не повинна перевищувати 30 символів (зараз ' . $nameLength . ' симв.).';
     $data['result'] = 'error';
   }
 } else {
-  $data['name'] = 'Заполните это поле.';
+  $data['name'] = 'Заповніть це поле.';
   $data['result'] = 'error';
 }
 
@@ -78,11 +78,11 @@ if (isset($_POST['message'])) {
   $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING); // защита от XSS
   $messageLength = mb_strlen($message, 'UTF-8');
   if ($messageLength > 500) {
-    $data['message'] = 'Длина текста не должна превышать 500 симв. (сейчас ' . $messageLength . ' симв.)';
+    $data['message'] = 'Довжина тексту не повинна перевищувати 500 символів (зараз ' . $messageLength . ' симв.)';
     $data['result'] = 'error';
   }
 } else {
-  $data['message'] = 'Заполните это поле.';
+  $data['message'] = 'Заповніть це поле.';
   $data['result'] = 'error';
 }
 
@@ -229,10 +229,10 @@ if ($data['result'] == 'success') {
   $message = isset($message) ? $message : '-';
   $output = "---------------------------------" . "\n";
   $output .= date("d-m-Y H:i:s") . "\n";
-  $output .= "Имя пользователя: " . $name . "\n";
+  $output .= "Iм'я клієнта: " . $name . "\n";
 //   $output .= "Адрес email: " . $email . "\n";
   $output .= "Телефон: " . $phone . "\n";
-  $output .= "Сообщение: " . $message . "\n";
+  $output .= "Повідомлення: " . $message . "\n";
   if (isset($attachments)) {
     $output .= "Файлы: " . "\n";
     foreach ($attachments as $attachment) {

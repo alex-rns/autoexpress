@@ -16,11 +16,11 @@
             <tr>
                 <td bgcolor="#fff" style="padding: 15px;">
                 
-                    Пользователь <b>%email.nameuser%</b> оставил следующее сообщение:<br>
+                    <b>%email.nameuser%</b> залишив наступну заявку:<br>
                     %email.message%
                     <hr>
-                    Телефон: <b>%email.phoneuser%</b><br>
-                    Дата отправки: <b>%email.date%</b>
+                    Телефон для зв'язку: <b>%email.phoneuser%</b><br>
+                    Дата звернення: <b>%email.date%</b>
                     
                 </td>
             </tr>
@@ -29,7 +29,7 @@
             </tr>
             <tr>
                 <td bgcolor="#fff" style="padding: 20px 15px; color: #777; font-size: 14px;">
-                    <p>&copy; 2017 Мой сайт.</p>
+                    <p>&copy; Автолюкс-Черкаси+.</p>
                 </td>
             </tr>
             </tbody>

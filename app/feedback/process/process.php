@@ -19,10 +19,10 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 
 const
 MAX_FILE_SIZE = 524288, // максимальный размер файла 512Кбайт (512*1024=524288)
-MAIL_FROM = 'admin@autoluxplus.zzz.com.ua', // от какого email будет отправляться письмо
-MAIL_FROM_NAME = 'autoluxplus.zzz.com.ua', // от какого имени будет отправляться письмо
+MAIL_FROM = 'admin@autoluxplus.com.ua', // от какого email будет отправляться письмо
+MAIL_FROM_NAME = 'autoluxplus.com.ua', // от какого имени будет отправляться письмо
 MAIL_SUBJECT = 'Повідомлення з форми замовлення дзвінка', // тема письма
-MAIL_ADDRESS = 'admin@autoluxplus.zzz.com.ua', // кому необходимо отправить письмо
+MAIL_ADDRESS = 'admin@autoluxplus.com.ua', // кому необходимо отправить письмо
 MAIL_SUBJECT_CLIENT = 'Ваше повідомлення доставлено', // настройки mail для информирования пользователя о доставке сообщения
 IS_SENDING_MAIL_VIA_SMTP = false, // выполнять отправку писем через SMTP
 // Если IS_SENDING_MAIL_VIA_SMTP установлен равным true

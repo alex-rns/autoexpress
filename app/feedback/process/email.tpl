@@ -16,7 +16,7 @@
             <tr>
                 <td bgcolor="#fff" style="padding: 15px;">
                 
-                    <b>%email.nameuser%</b> залишив наступну заявку:<br>
+                    <b>%email.nameuser%</b> залишив(-ла) наступну заявку:<br>
                     %email.message%
                     <hr>
                     Телефон для зв'язку: <b>%email.phoneuser%</b><br>
